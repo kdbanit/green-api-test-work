@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Green API Client</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="page">
+    <div class="left">
+        <div class="block">
+            <label for="idInstance">IdInstance</label>
+            <input type="text" placeholder="idInstance" id="idInstance" />
+            <label for="apiTokenInstance">ApiTokenInstance</label>
+            <input type="password" placeholder="ApiTokenInstance" id="apiTokenInstance" />
+            <button onclick="getSettings()">Получить настройки</button>
+            <button onclick="getStateInstance()">Получить состояние инстанса</button>
+        </div>
+
+        <div class="block">
+            <label for="chatIdForSendMessage">ID чата</label>
+            <input type="text" placeholder="77771234567@c.us" id="chatIdForSendMessage" />
+            <label for="message">Сообщение</label>
+            <textarea placeholder="Hello World!" id="message"></textarea>
+            <button onclick="sendMessage()">Отправить сообщение</button>
+        </div>
+
+        <div class="block">
+            <label for="chatIdForSendFileByUrl">ID чата</label>
+            <input type="text" placeholder="77771234567@c.us" id="chatIdForSendFileByUrl" />
+            <label for="urlFile">URL файла</label>
+            <input type="text" placeholder="https://my-site.com/img/horse.png" id="urlFile" />
+            <button onclick="sendFileByUrl()">Отправить файл из URL</button>
+        </div>
+    </div>
+
+    <div class="right">
+        <label for="apiResponse">Ответ:</label>
+        <textarea readonly class="response" id="apiResponse"></textarea>
+    </div>
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
