@@ -1,6 +1,6 @@
 name: Deploy static
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   deploy:
