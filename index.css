@@ -88,3 +88,7 @@ button:hover {
         grid-template-columns: 1fr;
     }
 }
+
+#apiResponse {
+    font-family: Consolas, monospace;
+}
